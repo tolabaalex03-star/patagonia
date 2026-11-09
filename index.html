@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Proyecto escolar sobre la gastronomía, historia y cultura de la Patagonia argentina.">
+  <title>Sabores de la Patagonia | Secundario N.º 7</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="juego.js" defer></script>
+</head>
+<body>
+  <header class="encabezado" id="inicio">
+    <p class="etiqueta">Proyecto de Diseño y Desarrollo Web</p>
+    <h1>SECUNDARIO N.º 7</h1>
+    <p class="bajada">Sabores de la Patagonia Argentina</p>
+  </header>
+
+  <nav class="navegacion" aria-label="Navegación principal">
+    <a href="#inicio">Inicio</a>
+    <a href="#historia">Historia</a>
+    <a href="#comidas">Comidas típicas</a>
+    <a href="#patagonia">La región</a>
+    <a href="#juego">Mini juego</a>
+    <a href="#creadores">Creadores</a>
+  </nav>
+
+  <main>
+    <section class="portada">
+      <div class="portada__contenido">
+        <span class="portada__sello">Un recorrido por el sur argentino</span>
+        <h2>Una región, muchos sabores</h2>
+        <p>Conocé las comidas tradicionales, sus ingredientes y las historias que forman parte de la identidad patagónica.</p>
+        <a class="boton" href="#comidas">Descubrir las comidas</a>
+      </div>
+    </section>
+
+    <section class="seccion historia" id="historia">
+      <div class="contenedor texto-centrado">
+        <p class="sobre-titulo">Tradición y cultura</p>
+        <h2 class="titulo-seccion">¿Cómo se formó la gastronomía patagónica?</h2>
+        <p>La gastronomía de la Patagonia argentina se fue formando con los alimentos disponibles en cada zona y con las costumbres de sus habitantes. Los pueblos originarios aprovecharon los recursos del territorio y transmitieron conocimientos sobre la recolección, la pesca y la preparación de alimentos.</p>
+        <p>Con el paso del tiempo también llegaron familias inmigrantes, como las comunidades galesas que se establecieron en Chubut desde 1865. Sus recetas se mezclaron con las tradiciones locales y dieron lugar a comidas muy representativas de la región.</p>
+        <div class="dato-destacado"><strong>Dato histórico:</strong> la llegada de inmigrantes galeses a Chubut en 1865 es una parte importante de la historia de la tradicional torta galesa.</div>
+      </div>
+    </section>
+
+    <section class="seccion comidas" id="comidas">
+      <div class="contenedor">
+        <p class="sobre-titulo texto-centrado">Conocé sus sabores</p>
+        <h2 class="titulo-seccion">Comidas típicas de la Patagonia</h2>
+        <p class="introduccion">Cada preparación cuenta algo de la historia, los productos y las costumbres de su lugar de origen.</p>
+
+        <div class="tarjetas">
+          <article class="tarjeta">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=85" alt="Carne asada, imagen ilustrativa del cordero patagónico">
+            <div class="tarjeta__contenido">
+              <span class="lugar">Santa Cruz y Chubut</span>
+              <h3>Cordero patagónico</h3>
+              <p>Es uno de los platos más conocidos del sur. Se suele preparar al asador y está relacionado con la cría de ovejas, una actividad tradicional de la estepa.</p>
+              <h4>Ingredientes habituales</h4>
+              <ul><li>Cordero</li><li>Sal</li><li>Ajo y hierbas aromáticas</li><li>Limón o condimentos, según la receta</li></ul>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=85" alt="Torta dulce, imagen ilustrativa de la torta galesa">
+            <div class="tarjeta__contenido">
+              <span class="lugar">Chubut</span>
+              <h3>Torta galesa</h3>
+              <p>Es una preparación dulce asociada a la comunidad galesa de Chubut. Se hizo conocida por su sabor especiado y porque puede conservarse durante bastante tiempo.</p>
+              <h4>Ingredientes habituales</h4>
+              <ul><li>Harina</li><li>Azúcar negra</li><li>Pasas y frutas secas</li><li>Nueces y especias</li></ul>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=1000&q=85" alt="Pescado cocido, imagen ilustrativa de la trucha">
+            <div class="tarjeta__contenido">
+              <span class="lugar">Neuquén y Río Negro</span>
+              <h3>Trucha patagónica</h3>
+              <p>La trucha es muy apreciada en la cocina de la zona cordillerana, donde los ríos y lagos forman parte del paisaje. Puede prepararse al horno, a la plancha o ahumada.</p>
+              <h4>Ingredientes habituales</h4>
+              <ul><li>Trucha</li><li>Limón</li><li>Ajo y perejil</li><li>Sal y pimienta</li></ul>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=85" alt="Comida con verduras, imagen ilustrativa de ingredientes del curanto">
+            <div class="tarjeta__contenido">
+              <span class="lugar">Colonia Suiza, Río Negro</span>
+              <h3>Curanto</h3>
+              <p>Es una técnica de cocción bajo tierra con piedras calientes. En Colonia Suiza, cerca de Bariloche, se mantiene como una tradición gastronómica y cultural.</p>
+              <h4>Ingredientes habituales</h4>
+              <ul><li>Carne y pollo</li><li>Papas y otras verduras</li><li>Embutidos</li><li>Hojas para cubrir los alimentos</li></ul>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=85" alt="Carne asada, imagen ilustrativa del chivito">
+            <div class="tarjeta__contenido">
+              <span class="lugar">Norte de Neuquén</span>
+              <h3>Chivito neuquino</h3>
+              <p>Es una comida tradicional del norte neuquino. Su producción está vinculada a familias crianceras y a la trashumancia, el traslado estacional de los animales.</p>
+              <h4>Ingredientes habituales</h4>
+              <ul><li>Chivito</li><li>Sal</li><li>Ajo y hierbas</li><li>Condimentos a gusto</li></ul>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1000&q=85" alt="Frutas y alimentos frescos, imagen ilustrativa de productos regionales">
+            <div class="tarjeta__contenido">
+              <span class="lugar">Río Negro y Neuquén</span>
+              <h3>Frutos rojos y dulces</h3>
+              <p>En distintas localidades cordilleranas se elaboran dulces y mermeladas con frutas como frambuesas, cerezas y otras variedades de la región.</p>
+              <h4>Ingredientes habituales</h4>
+              <ul><li>Frutos rojos</li><li>Azúcar</li><li>Jugo de limón</li><li>Agua, según la preparación</li></ul>
+            </div>
+          </article>
+        </div>
+        <p class="aclaracion">Nota: las fotografías son ilustrativas; pueden no mostrar exactamente el plato descrito. Los ingredientes pueden variar según la receta familiar o local.</p>
+      </div>
+    </section>
+
+    <section class="seccion region" id="patagonia">
+      <div class="contenedor region__rejilla">
+        <div>
+          <p class="sobre-titulo">El sur de nuestro país</p>
+          <h2 class="titulo-seccion titulo-izquierda">La región patagónica</h2>
+          <p>La Patagonia argentina comprende, en su división regional habitual, las provincias de Neuquén, Río Negro, Chubut, Santa Cruz y Tierra del Fuego. Sus paisajes incluyen montañas, bosques, lagos, mesetas y costas.</p>
+          <p>La diversidad del territorio influye en su cocina: hay carnes de producción regional, pescados, frutas, productos de huerta y recetas heredadas de distintas comunidades.</p>
+          <ul class="lista-provincias">
+            <li>Neuquén</li><li>Río Negro</li><li>Chubut</li><li>Santa Cruz</li><li>Tierra del Fuego</li>
+          </ul>
+        </div>
+        <img class="region__imagen" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=85" alt="Montañas y paisaje natural de la Patagonia">
+      </div>
+    </section>
+
+    <section class="seccion juego" id="juego">
+      <div class="contenedor">
+        <p class="sobre-titulo texto-centrado">¡Poné a prueba lo que aprendiste!</p>
+        <h2 class="titulo-seccion">Mini juego: Desafío Patagónico</h2>
+        <p class="introduccion">Respondé cinco preguntas sobre la gastronomía y la cultura de la Patagonia.</p>
+        <div class="caja-juego">
+          <div class="juego__barra"><span id="progreso">Pregunta 1 de 5</span><span id="marcador">Puntaje: 0</span></div>
+          <div class="barra-fondo"><div class="barra-progreso" id="barra"></div></div>
+          <h3 id="pregunta" class="pregunta">¿En qué provincia es tradicional la torta galesa?</h3>
+          <div id="opciones" class="opciones"></div>
+          <p id="mensaje" class="mensaje" aria-live="polite">Elegí una respuesta para continuar.</p>
+          <button id="siguiente" class="boton boton-juego" type="button" disabled>Siguiente pregunta</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion creadores" id="creadores">
+      <div class="contenedor texto-centrado">
+        <p class="sobre-titulo">Trabajo escolar</p>
+        <h2 class="titulo-seccion">Creadores del proyecto</h2>
+        <div class="tarjeta-creadores">
+          <p><strong>Institución:</strong> Colegio Secundario N.º 7</p>
+          <p><strong>Creador:</strong> Alex Tolaba</p>
+          <p><strong>Compañeros:</strong> Integrantes del grupo</p>
+          <p><strong>Materia:</strong> Diseño y Desarrollo Web</p>
+          <p><strong>Tema:</strong> Gastronomía de la Patagonia argentina</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p><strong>SECUNDARIO N.º 7</strong> · Sabores de la Patagonia</p>
+    <p>Creado por Alex Tolaba y compañeros · Proyecto educativo</p>
+    <a href="#inicio">Volver al inicio ↑</a>
+  </footer>
+</body>
+</html>
